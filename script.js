@@ -1,5 +1,6 @@
 // ----------------------------------------------------------- date header
 
+let currentHour = moment().format("HH");
 var clock = document.getElementById("#clock");
 var today = dayjs();
 
@@ -33,16 +34,20 @@ $("#clearFieldsBtn").click(function (event) {
 
 // ---------------------------------------- textarea past, present, future
 
-$("textAreas").each(function () {
-  var textAreas = parseInt($(this).attr("id").split("-")[1]);
+$(".time-Block").each(function () {
+  var timeBlock = parseInt($(this).attr("id").split("-")[1]);
 
-  if (currentHour == textAreas) {
+  if (timeBlock === currentHour) {
+    $(this).addClass("past");
+    $(this).removeClass("present");
+    $(this).removeclass("future");
+  } else if (timeBlock < currentHour) {
+    $(this).removeClass("future");
+    $(this).removeClass("past");
     $(this).addClass("present");
-  } else if (currentHour < textAreas) {
-    this.addClass("future");
-    this.removeClass("present");
-  } else if (currentHour > textAreas) {
-    this.removeClass("future");
-    this.addClass("past");
+  } else {
+    $(this).removeClass("present");
+    $(this).removeClass("past");
+    $(this).addClass("future");
   }
 });
