@@ -24,3 +24,19 @@ $(".saveBtn").click(function () {
 
   localStorage.setItem(time, text);
 });
+
+// ---------------------------------------- textarea past, present, future
+
+$("textAreas").each(function () {
+  var textAreas = parseInt($(this).attr("id").split("-")[1]);
+
+  if (currentHour == textAreas) {
+    $(this).addClass("present");
+  } else if (currentHour < textAreas) {
+    this.addClass("future");
+    this.removeClass("present");
+  } else if (currentHour > textAreas) {
+    this.removeClass("future");
+    this.addClass("past");
+  }
+});
