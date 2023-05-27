@@ -13,6 +13,8 @@ textarea {
     padding: 10px;
 }
 
+/* light.css */
+
 .description {
     white-space: pre-wrap;
 }
@@ -37,12 +39,12 @@ textarea {
 }
 
 .present {
-    background-color: #ff6961;
+    background-color: #606edd;
     color: white;
 }
 
 .future {
-    background-color: #77dd77;
+    background-color: #33adff;
     color: white;
 }
 
