@@ -1,151 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
     />
     <script src="https://momentjs.com/downloads/moment.js"></script>
     <link
-rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-    crossorigin="anonymous"
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
     />
-    <script src="https://kit.fontawesome.com/d7ffd59b37.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d7ffd59b37.js"
+      crossorigin="anonymous"
+    ></script>
     <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="p-5 mb-2 text-center">
-    <h1 class="display-3">Your Work Day Scheduler</h1>
-    <span id="clockDecor">Today's date is <span id="clock"></span></span>
+      <h1 class="display-3">Your Work Day Scheduler</h1>
+      <span id="clockDecor">Today's date is <span id="clock"></span></span>
     </header>
 
-
     <div class="container-lg px-5">
-
-    <div id="09" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">9 </div>
+      <div id="09" class="row time">
+        <div class="col-2 col-md-1 hour text-center py-3">9</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn btn-success col-2 col-sm-1" id="save">
-    <i class="fa-solid fa-plus"></i>
-</button>
-</div>
-
-
-    <!-- Example of a a present time block. The "present" class adds a red background color. -->
-    <div id="10" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">10 </div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn btn-success col-2 col-md-1" aria-label="save">
-        <i class="fa-solid fa-plus"></i>
-</button>
-        </div>
-
-    <!-- Example of a future time block. The "future" class adds a green background color. -->
-    <div id="11" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">11 </div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn btn-success col-2 col-md-1" aria-label="save">
-    <i class="fa-solid fa-plus"></i>
+          <i class="fa-solid fa-plus"></i>
         </button>
-    </div>
+      </div>
 
-    <div id="12" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">12 </div>
+      <div id="10" class="row time">
+        <div class="col-2 col-md-1 hour text-center py-3">10</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn btn-success col-2 col-md-1" aria-label="save">
-   <i class="fa-solid fa-plus"></i>
+        <button
+          class="btn saveBtn btn-success col-2 col-md-1"
+          aria-label="save"
+        >
+          <i class="fa-solid fa-plus"></i>
         </button>
-    </div>
+      </div>
 
-    <div id="13" class="row time">
-       <div class="col-2 col-md-1 hour text-center py-3">1 </div>
+      <div id="11" class="row time">
+        <div class="col-2 col-md-1 hour text-center py-3">11</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn btn-success col-2 col-md-1" aria-label="save">
-   <i class="fa-solid fa-plus"></i>
+        <button
+          class="btn saveBtn btn-success col-2 col-md-1"
+          aria-label="save"
+        >
+          <i class="fa-solid fa-plus"></i>
         </button>
-    </div>
+      </div>
 
-    <div id="14" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">2 </div>
+      <div id="12" class="row time">
+        <div class="col-2 col-md-1 hour text-center py-3">12</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn btn-success col-2 col-md-1" aria-label="save">
-    <i class="fa-solid fa-plus"></i>
+        <button
+          class="btn saveBtn btn-success col-2 col-md-1"
+          aria-label="save"
+        >
+          <i class="fa-solid fa-plus"></i>
         </button>
-    </div>
+      </div>
 
-    <div id="15" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">3 </div>
+      <div id="13" class="row time">
+        <div class="col-2 col-md-1 hour text-center py-3">1</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn btn-success col-2 col-md-1" aria-label="save">
-   <i class="fa-solid fa-plus"></i>
+        <button
+          class="btn saveBtn btn-success col-2 col-md-1"
+          aria-label="save"
+        >
+          <i class="fa-solid fa-plus"></i>
         </button>
-    </div>
+      </div>
 
-    <div id="16" class="row time">
-       <div class="col-2 col-md-1 hour text-center py-3">4 </div>
+      <div id="14" class="row time">
+        <div class="col-2 col-md-1 hour text-center py-3">2</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn btn-success col-2 col-md-1" aria-label="save">
-   <i class="fa-solid fa-plus"></i>
+        <button
+          class="btn saveBtn btn-success col-2 col-md-1"
+          aria-label="save"
+        >
+          <i class="fa-solid fa-plus"></i>
         </button>
-    </div>
+      </div>
 
-    <div id="17" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">5 </div>
+      <div id="15" class="row time">
+        <div class="col-2 col-md-1 hour text-center py-3">3</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn btn-success col-2 col-md-1" aria-label="save">
-    <i class="fa-solid fa-plus"></i>
+        <button
+          class="btn saveBtn btn-success col-2 col-md-1"
+          aria-label="save"
+        >
+          <i class="fa-solid fa-plus"></i>
         </button>
+      </div>
+
+      <div id="16" class="row time">
+        <div class="col-2 col-md-1 hour text-center py-3">4</div>
+        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <button
+          class="btn saveBtn btn-success col-2 col-md-1"
+          aria-label="save"
+        >
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+
+      <div id="17" class="row time">
+        <div class="col-2 col-md-1 hour text-center py-3">5</div>
+        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <button
+          class="btn saveBtn btn-success col-2 col-md-1"
+          aria-label="save"
+        >
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
     </div>
-
-    <div id="18" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">6 </div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn btn-success col-2 col-md-1" aria-label="save">
-    <i class="fa-solid fa-plus"></i>
-</div>
- <div id="19" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">7 </div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn btn-success col-2 col-md-1" aria-label="save">
-    <i class="fa-solid fa-plus"></i>
-</div>
- <div id="20" class="row time">
-       <div class="col-2 col-md-1 hour text-center py-3">8 </div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn btn-success col-2 col-md-1" aria-label="save">
-    <i class="fa-solid fa-plus"></i>
-</div>
-<div id="23" class="row time">
-       <div class="col-2 col-md-1 hour text-center py-3">23 </div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn btn-success col-2 col-md-1" aria-label="save">
-    <i class="fa-solid fa-plus"></i>
-</div>
-
-</div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script
-    src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-    crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
     ></script>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
