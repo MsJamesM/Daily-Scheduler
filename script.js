@@ -8,16 +8,18 @@ $("#clock").text(today.format("MMM D, YYYY"));
 
 // ---------------------------------------------------------- local storage
 
-$("#hour9 .description").val(localStorage.getItem("hour9"));
-$("#hour10 .description").val(localStorage.getItem("hour10"));
-$("#hour11 .description").val(localStorage.getItem("hour11"));
-$("#hour12 .description").val(localStorage.getItem("hour12"));
-$("#hour13 .description").val(localStorage.getItem("hour13"));
-$("#hour14 .description").val(localStorage.getItem("hour14"));
-$("#hour15 .description").val(localStorage.getItem("hour15"));
-$("#hour16 .description").val(localStorage.getItem("hour16"));
-$("#hour17 .description").val(localStorage.getItem("hour17"));
-$("#hour18 .description").val(localStorage.getItem("hour18"));
+$("#09 .description").val(localStorage.getItem("09"));
+$("#10 .description").val(localStorage.getItem("10"));
+$("#11 .description").val(localStorage.getItem("11"));
+$("#12 .description").val(localStorage.getItem("12"));
+$("#13 .description").val(localStorage.getItem("13"));
+$("#14 .description").val(localStorage.getItem("14"));
+$("#15 .description").val(localStorage.getItem("15"));
+$("#16 .description").val(localStorage.getItem("16"));
+$("#17 .description").val(localStorage.getItem("17"));
+$("#18 .description").val(localStorage.getItem("18"));
+$("#19 .description").val(localStorage.getItem("19"));
+$("#20 .description").val(localStorage.getItem("20"));
 
 $(".saveBtn").click(function () {
   var text = $(this).siblings("textArea").val();
@@ -26,26 +28,21 @@ $(".saveBtn").click(function () {
   localStorage.setItem(time, text);
 });
 
-$("#clearFieldsBtn").click(function (event) {
-  event.preventDefault;
-  $("textarea").val("");
-  localStorage.clear();
-});
-
 // ---------------------------------------- textarea past, present, future
 
-$(".time-Block").each(function () {
-  var timeBlock = parseInt($(this).attr("id").split("-")[1]);
+$(".time").each(function () {
+  var currentTime = moment().format("HH");
+  var hour = $(this).attr("id");
 
-  if (timeBlock === currentHour) {
-    $(this).addClass("past");
-    $(this).removeClass("present");
-    $(this).removeclass("future");
-  } else if (timeBlock < currentHour) {
+  if (currentTime == hour) {
     $(this).removeClass("future");
     $(this).removeClass("past");
     $(this).addClass("present");
-  } else {
+  } else if (currentTime < hour) {
+    $(this).removeClass("future");
+    $(this).removeClass("present");
+    $(this).addClass("past");
+  } else if (currentTime > hour) {
     $(this).removeClass("present");
     $(this).removeClass("past");
     $(this).addClass("future");
