@@ -20,6 +20,7 @@ $("#17 .description").val(localStorage.getItem("17"));
 $("#18 .description").val(localStorage.getItem("18"));
 $("#19 .description").val(localStorage.getItem("19"));
 $("#20 .description").val(localStorage.getItem("20"));
+$("#23 .description").val(localStorage.getItem("23"));
 
 $(".saveBtn").click(function () {
   var text = $(this).siblings("textArea").val();
@@ -41,10 +42,10 @@ $(".time").each(function () {
   } else if (currentTime < hour) {
     $(this).removeClass("future");
     $(this).removeClass("present");
-    $(this).addClass("past");
+    $(this).addClass("future");
   } else if (currentTime > hour) {
     $(this).removeClass("present");
     $(this).removeClass("past");
-    $(this).addClass("future");
+    $(this).addClass("past");
   }
 });
