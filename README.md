@@ -29,7 +29,8 @@ To use this work day scheduler, navigate to https://msjamesm.github.io/Daily-Sch
 
 ## Credits
 
-There were no other contributors to this project and no third-party material was used outside the material provided by Denver University's Coding Boot Camp (in partnership with edX).
+There were no other contributors to this project outside the material provided by Denver University's Coding Boot Camp (in partnership with edX). 
+Custom fonts ("Abril Fatface" and "Yellowtail") for this project can be found at https://fonts.google.com.
 
 ## License
 
