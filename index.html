@@ -20,22 +20,26 @@ rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
     rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Yellowtail&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
 </head>
 
 <body>
-    <header class="p-5 mb-4 text-center">
-    <h1 class="display-3">Work Day Scheduler</h1>
-    <p class="lead">A simple calendar app for scheduling your work day</p>
-    <p id="clock"></p>
+    <header class="p-5 mb-2 text-center">
+    <h1 class="display-3">Your Work Day Scheduler</h1>
+    <span id="clockDecor">Today's date is <span id="clock"></span></span>
     </header>
 
 
     <div class="container-lg px-5">
 
     <div id="09" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">9AM</div>
+        <div class="col-2 col-md-1 hour text-center py-3">9 <span id="cursive">am</span></div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-sm-1" id="save">
     <i class="fa-solid fa-plus"></i>
@@ -45,7 +49,7 @@ rel="stylesheet"
 
     <!-- Example of a a present time block. The "present" class adds a red background color. -->
     <div id="10" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">10AM</div>
+        <div class="col-2 col-md-1 hour text-center py-3">10 <span id="cursive">am</span></div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
         <i class="fa-solid fa-plus"></i>
@@ -54,7 +58,7 @@ rel="stylesheet"
 
     <!-- Example of a future time block. The "future" class adds a green background color. -->
     <div id="11" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">11AM</div>
+        <div class="col-2 col-md-1 hour text-center py-3">11 <span id="cursive">am</span></div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
     <i class="fa-solid fa-plus"></i>
@@ -62,7 +66,7 @@ rel="stylesheet"
     </div>
 
     <div id="12" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">12PM</div>
+        <div class="col-2 col-md-1 hour text-center py-3">12 <span id="cursive">pm</span></div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
    <i class="fa-solid fa-plus"></i>
@@ -70,7 +74,7 @@ rel="stylesheet"
     </div>
 
     <div id="13" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">1PM</div>
+       <div class="col-2 col-md-1 hour text-center py-3">1 <span id="cursive">pm</span></div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
    <i class="fa-solid fa-plus"></i>
@@ -78,7 +82,7 @@ rel="stylesheet"
     </div>
 
     <div id="14" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">2PM</div>
+        <div class="col-2 col-md-1 hour text-center py-3">2 <span id="cursive">pm</span></div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
     <i class="fa-solid fa-plus"></i>
@@ -86,7 +90,7 @@ rel="stylesheet"
     </div>
 
     <div id="15" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">3PM</div>
+        <div class="col-2 col-md-1 hour text-center py-3">3 <span id="cursive">pm</span></div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
    <i class="fa-solid fa-plus"></i>
@@ -94,7 +98,7 @@ rel="stylesheet"
     </div>
 
     <div id="16" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">4PM</div>
+       <div class="col-2 col-md-1 hour text-center py-3">4 <span id="cursive">pm</span></div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
    <i class="fa-solid fa-plus"></i>
@@ -102,7 +106,7 @@ rel="stylesheet"
     </div>
 
     <div id="17" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">5PM</div>
+        <div class="col-2 col-md-1 hour text-center py-3">5 <span id="cursive">pm</span></div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
     <i class="fa-solid fa-plus"></i>
@@ -110,19 +114,19 @@ rel="stylesheet"
     </div>
 
     <div id="18" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">6PM</div>
+        <div class="col-2 col-md-1 hour text-center py-3">6 <span id="cursive">pm</span></div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
     <i class="fa-solid fa-plus"></i>
 </div>
  <div id="19" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">7PM</div>
+        <div class="col-2 col-md-1 hour text-center py-3">7 <span id="cursive">pm</span></div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
     <i class="fa-solid fa-plus"></i>
 </div>
  <div id="20" class="row time">
-        <div class="col-2 col-md-1 hour text-center py-3">8PM</div>
+       <div class="col-2 col-md-1 hour text-center py-3">8 <span id="cursive">pm</span></div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
     <i class="fa-solid fa-plus"></i>
